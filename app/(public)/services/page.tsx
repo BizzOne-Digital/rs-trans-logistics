@@ -55,8 +55,10 @@ export default function ServicesPage() {
 
       {/* ── HERO ──────────────────────────────────────────── */}
       <section className="relative pt-28 md:pt-36 pb-16 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url('/images/services/services-banner.jpg')" }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#070B12]/80 via-[#070B12]/70 to-[#070B12]" />
         <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-transparent pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-blue-400 border border-blue-500/30 rounded-full px-4 py-2 mb-6 glass">

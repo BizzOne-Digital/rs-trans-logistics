@@ -80,7 +80,12 @@ export default function HomePageClient() {
         {/* Parallax background */}
         <motion.div style={{ y: heroY }} className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-b from-[#070B12]/60 via-[#070B12]/40 to-[#070B12] z-10" />
-          <div className="absolute inset-0 bg-grid opacity-20" />
+          {/* Hero background image */}
+          <div
+            className="absolute inset-0 bg-center bg-cover"
+            style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-grid opacity-10" />
           <div className="absolute inset-0 opacity-20" style={{
             backgroundImage: `radial-gradient(ellipse 80% 50% at 50% 60%, rgba(37,99,235,0.15) 0%, transparent 70%),
                               radial-gradient(ellipse 40% 30% at 80% 40%, rgba(249,115,22,0.08) 0%, transparent 60%)`,

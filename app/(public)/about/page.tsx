@@ -70,25 +70,32 @@ export default function AboutPage() {
           </motion.div>
 
           <motion.div {...fadeUp(0.15)}>
-            <div className="glass-card border border-white/5 rounded-2xl p-8 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-transparent pointer-events-none" />
-              <div className="relative z-10">
-                <div className="text-6xl mb-6">🚛</div>
-                <h3 className="text-white font-bold text-xl mb-4">RS Trans Logistics</h3>
-                <div className="space-y-3">
-                  {[
-                    { icon: <MapPin className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />, title: 'Headquarters', value: '12542 Grove Crescent, Surrey, BC V3V 2L7' },
-                    { icon: <span className="text-xl leading-none">🌎</span>, title: 'Service Area', value: 'Canada & United States of America' },
-                    { icon: <span className="text-xl leading-none">👤</span>, title: 'Contact Person', value: 'Rajneel Sampat' },
-                  ].map((row) => (
-                    <div key={row.title} className="flex items-start gap-3 glass p-3 rounded-xl">
-                      {row.icon}
-                      <div>
-                        <p className="text-white text-sm font-medium">{row.title}</p>
-                        <p className="text-slate-400 text-sm">{row.value}</p>
+            <div className="glass-card border border-white/5 rounded-2xl overflow-hidden relative">
+              {/* about-main.jpg */}
+              <div
+                className="h-64 bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/about/about-main.jpg')" }}
+              />
+              <div className="p-8 relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-transparent pointer-events-none" />
+                <div className="relative z-10">
+                  <div className="text-6xl mb-4">🚛</div>
+                  <h3 className="text-white font-bold text-xl mb-4">RS Trans Logistics</h3>
+                  <div className="space-y-3">
+                    {[
+                      { icon: <MapPin className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />, title: 'Headquarters', value: '12542 Grove Crescent, Surrey, BC V3V 2L7' },
+                      { icon: <span className="text-xl leading-none">🌎</span>, title: 'Service Area', value: 'Canada & United States of America' },
+                      { icon: <span className="text-xl leading-none">👤</span>, title: 'Contact Person', value: 'Rajneel Sampat' },
+                    ].map((row) => (
+                      <div key={row.title} className="flex items-start gap-3 glass p-3 rounded-xl">
+                        {row.icon}
+                        <div>
+                          <p className="text-white text-sm font-medium">{row.title}</p>
+                          <p className="text-slate-400 text-sm">{row.value}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,7 +105,10 @@ export default function AboutPage() {
 
       {/* ── MISSION ───────────────────────────────────────── */}
       <section className="py-20 px-4 bg-[#111827]/40 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid opacity-5 pointer-events-none" />
+        {/* about-depot.jpg as background */}
+        <div className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/about/about-depot.jpg')" }} />
+        <div className="absolute inset-0 bg-[#111827]/80" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.div {...fadeUp(0)}>
             <div className="w-16 h-16 bg-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -164,10 +174,14 @@ export default function AboutPage() {
           </motion.div>
 
           <motion.div {...fadeUp(0.15)}>
-            <div className="glass-card border border-white/5 rounded-2xl overflow-hidden h-64 relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-transparent flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="text-5xl mb-3">📍</div>
+            <div className="glass-card border border-white/5 rounded-2xl overflow-hidden">
+              {/* about-highway.jpg */}
+              <div
+                className="h-48 bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/about/about-highway.jpg')" }}
+              />
+              <div className="relative bg-gradient-to-br from-blue-900/20 to-transparent flex items-center justify-center p-6">
+                <div className="text-center">
                   <p className="text-white font-bold">Surrey, BC</p>
                   <p className="text-slate-400 text-sm mb-4">British Columbia, Canada</p>
                   <a href="https://maps.google.com/?q=12542+Grove+Crescent+Surrey+BC"
