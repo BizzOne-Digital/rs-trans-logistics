@@ -35,7 +35,7 @@ export interface ISiteSettings extends Document {
 
 const SiteSettingsSchema = new Schema<ISiteSettings>(
   {
-    companyName: { type: String, default: 'RS Trans Logistics' },
+    companyName: { type: String, default: 'Blue River Logistics' },
     logo: { type: String, default: '' },
     favicon: { type: String, default: '' },
     phone: { type: String, default: '+1 236 514 6876' },
@@ -70,7 +70,7 @@ const SiteSettingsSchema = new Schema<ISiteSettings>(
     },
     seoTitle: {
       type: String,
-      default: 'RS Trans Logistics | Canada & USA Trucking Services',
+      default: 'Blue River Logistics | Canada & USA Trucking Services',
     },
     seoDescription: {
       type: String,

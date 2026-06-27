@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Privacy Policy | RS Trans Logistics' };
+export const metadata: Metadata = { title: 'Privacy Policy | Blue River Logistics' };
 
 export default function PrivacyPolicyPage() {
   return (
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
             },
             {
               title: '7. Contact Us',
-              content: 'If you have any questions about this Privacy Policy or our data practices, please contact us at: RS Trans Logistics, 12542 Grove Crescent, Surrey, BC V3V 2L7, Canada. Email: rajneelsampat00@gmail.com. Phone: +1 236 514 6876.',
+              content: 'If you have any questions about this Privacy Policy or our data practices, please contact us at: Blue River Logistics, 12542 Grove Crescent, Surrey, BC V3V 2L7, Canada. Email: rajneelsampat00@gmail.com. Phone: +1 236 514 6876.',
             },
           ].map((section) => (
             <div key={section.title} className="glass-card border border-white/5 rounded-2xl p-6">

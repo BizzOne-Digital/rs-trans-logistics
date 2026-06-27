@@ -1,4 +1,4 @@
-# RS Trans Logistics — Full-Stack Trucking Website
+# Blue River Logistics — Full-Stack Trucking Website
 
 A complete, premium, cinematic trucking company website with full admin panel. Built with Next.js 16, MongoDB, Framer Motion, and Tailwind CSS.
 
@@ -21,7 +21,7 @@ EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-gmail-app-password
-EMAIL_FROM=RS Trans Logistics <your-email@gmail.com>
+EMAIL_FROM=Blue River Logistics <your-email@gmail.com>
 ADMIN_NOTIFICATION_EMAIL=rajneelsampat00@gmail.com
 
 NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -44,7 +44,7 @@ This will create:
 Visit: `http://localhost:3000/admin/login`
 
 ```
-Email:    admin@rstranslogistics.com
+Email:    admin@blueriverlogistics.com
 Password: Admin123!
 ```
 
@@ -148,7 +148,7 @@ npm start
 
 ## 📞 Business Info
 
-- **Company**: RS Trans Logistics
+- **Company**: Blue River Logistics
 - **Contact**: Rajneel Sampat
 - **Phone**: +1 236 514 6876
 - **Email**: rajneelsampat00@gmail.com

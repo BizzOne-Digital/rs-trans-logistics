@@ -35,7 +35,7 @@ const defaultServices = [
     relatedServices: ['reefer-service', 'flatbed-curtain-roll-tite', 'step-deck'],
     sortOrder: 1,
     isActive: true,
-    seoTitle: 'Dry Van Trucking Services | Canada & USA | RS Trans Logistics',
+    seoTitle: 'Dry Van Trucking Services | Canada & USA | Blue River Logistics',
     seoDescription: 'Professional dry van transportation services between Canada and the USA. Secure enclosed freight solutions for general cargo.',
   },
   {
@@ -68,7 +68,7 @@ const defaultServices = [
     relatedServices: ['dry-vans', 'container-service', 'intermodal'],
     sortOrder: 2,
     isActive: true,
-    seoTitle: 'Reefer Trucking Services | Temperature Controlled Freight | RS Trans Logistics',
+    seoTitle: 'Reefer Trucking Services | Temperature Controlled Freight | Blue River Logistics',
     seoDescription: 'Temperature-controlled reefer freight services between Canada and the USA. Cold chain solutions for food and perishable goods.',
   },
   {
@@ -101,7 +101,7 @@ const defaultServices = [
     relatedServices: ['dry-vans', 'step-deck', 'container-service'],
     sortOrder: 3,
     isActive: true,
-    seoTitle: 'Flatbed Tarp & Curtain Van Services | RS Trans Logistics',
+    seoTitle: 'Flatbed Tarp & Curtain Van Services | Blue River Logistics',
     seoDescription: 'Flatbed tarp, curtain van, and roll tite freight services between Canada and the USA. Flexible solutions for oversized and industrial loads.',
   },
   {
@@ -134,7 +134,7 @@ const defaultServices = [
     relatedServices: ['flatbed-curtain-roll-tite', 'dry-vans', 'container-service'],
     sortOrder: 4,
     isActive: true,
-    seoTitle: 'Step Deck Trucking Services | Oversized Freight | RS Trans Logistics',
+    seoTitle: 'Step Deck Trucking Services | Oversized Freight | Blue River Logistics',
     seoDescription: 'Step deck trucking for oversized and tall freight between Canada and the USA. Lower deck height for industrial machinery and equipment.',
   },
   {
@@ -167,7 +167,7 @@ const defaultServices = [
     relatedServices: ['intermodal', 'dry-vans', 'reefer-service'],
     sortOrder: 5,
     isActive: true,
-    seoTitle: 'Container Trucking Services | Import Export Freight | RS Trans Logistics',
+    seoTitle: 'Container Trucking Services | Import Export Freight | Blue River Logistics',
     seoDescription: 'Container transportation services between Canadian and US ports, terminals, and warehouses. Import/export freight logistics.',
   },
   {
@@ -200,7 +200,7 @@ const defaultServices = [
     relatedServices: ['container-service', 'dry-vans', 'reefer-service'],
     sortOrder: 6,
     isActive: true,
-    seoTitle: 'Intermodal Freight Services | Canada USA | RS Trans Logistics',
+    seoTitle: 'Intermodal Freight Services | Canada USA | Blue River Logistics',
     seoDescription: 'Intermodal transportation combining road and rail for efficient long-distance freight movement between Canada and the USA.',
   },
 ];
@@ -210,17 +210,17 @@ export async function seedDatabase() {
     await connectDB();
 
     // Create default admin user
-    const existingAdmin = await AdminUser.findOne({ email: 'admin@rstranslogistics.com' });
+    const existingAdmin = await AdminUser.findOne({ email: 'admin@blueriverlogistics.com' });
     if (!existingAdmin) {
       const passwordHash = await bcrypt.hash('Admin123!', 12);
       await AdminUser.create({
         name: 'Admin User',
-        email: 'admin@rstranslogistics.com',
+        email: 'admin@blueriverlogistics.com',
         passwordHash,
         role: 'superadmin',
       });
       console.log('✅ Default admin user created');
-      console.log('📧 Email: admin@rstranslogistics.com');
+      console.log('📧 Email: admin@blueriverlogistics.com');
       console.log('🔑 Password: Admin123!');
       console.log('⚠️  CHANGE THESE CREDENTIALS BEFORE GOING TO PRODUCTION!');
     }

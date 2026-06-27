@@ -52,7 +52,7 @@ export default function AdminDashboard() {
         {/* Welcome */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           className="mb-8 glass-card border border-white/5 rounded-2xl p-6 bg-gradient-to-r from-blue-900/20 to-transparent">
-          <h2 className="text-white font-bold text-xl mb-1">Welcome to RS Trans Logistics Admin</h2>
+          <h2 className="text-white font-bold text-xl mb-1">Welcome to Blue River Logistics Admin</h2>
           <p className="text-slate-400 text-sm">Manage your website content, quote requests, and messages from here.</p>
         </motion.div>
 

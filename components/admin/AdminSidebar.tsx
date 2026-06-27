@@ -57,7 +57,7 @@ export default function AdminSidebar({ newQuotes = 0, newMessages = 0 }: AdminSi
         </div>
         {!collapsed && (
           <div>
-            <p className="text-white font-bold text-sm leading-tight">RS Trans</p>
+            <p className="text-white font-bold text-sm leading-tight">Blue River</p>
             <p className="text-blue-400 text-xs tracking-wider">Admin Panel</p>
           </div>
         )}

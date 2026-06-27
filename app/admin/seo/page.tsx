@@ -15,7 +15,7 @@ interface SeoSettings {
 
 export default function AdminSEOPage() {
   const [settings, setSettings] = useState<SeoSettings>({
-    seoTitle: 'RS Trans Logistics | Canada & USA Trucking Services',
+    seoTitle: 'Blue River Logistics | Canada & USA Trucking Services',
     seoDescription: 'Full-service trucking company based in Surrey, BC, providing freight services between Canada and the USA.',
     seoKeywords: 'Canada USA trucking, Surrey BC trucking, cross-border freight, dry van, reefer service',
     ogImage: '',
@@ -91,7 +91,7 @@ export default function AdminSEOPage() {
           <h3 className="text-white font-bold mb-4">SEO Preview</h3>
           <div className="glass rounded-xl p-4 border border-white/5">
             <p className="text-blue-400 text-sm font-medium mb-1">{settings.seoTitle || 'Page Title'}</p>
-            <p className="text-green-400 text-xs mb-1">https://rstranslogistics.com</p>
+            <p className="text-green-400 text-xs mb-1">https://blueriverlogistics.com</p>
             <p className="text-slate-400 text-sm">{settings.seoDescription || 'Meta description will appear here...'}</p>
           </div>
         </motion.div>

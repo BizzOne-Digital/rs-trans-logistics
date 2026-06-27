@@ -24,7 +24,7 @@ const sections = [
     icon: Info,
     label: 'About Section',
     fields: [
-      { key: 'aboutHeading', label: 'About Heading', placeholder: 'About RS Trans Logistics', type: 'text' },
+      { key: 'aboutHeading', label: 'About Heading', placeholder: 'About Blue River Logistics', type: 'text' },
       { key: 'aboutSubheading', label: 'Subheading', placeholder: 'A full-service trucking company...', type: 'textarea' },
       { key: 'aboutOverview', label: 'Company Overview', placeholder: 'We are a full-service trucking company...', type: 'textarea' },
       { key: 'missionText', label: 'Mission Statement', placeholder: 'To provide reliable...', type: 'textarea' },
@@ -35,7 +35,7 @@ const sections = [
     icon: Phone,
     label: 'Contact Info',
     fields: [
-      { key: 'contactHeading', label: 'Contact Page Heading', placeholder: 'Contact RS Trans Logistics', type: 'text' },
+      { key: 'contactHeading', label: 'Contact Page Heading', placeholder: 'Contact Blue River Logistics', type: 'text' },
       { key: 'contactSubheading', label: 'Contact Subheading', placeholder: 'Ready to move freight...', type: 'textarea' },
     ],
   },
@@ -49,11 +49,11 @@ export default function AdminContentPage() {
     heroSubheading: 'Reliable freight transportation solutions built for businesses that need speed, safety, and consistency across borders.',
     heroPrimaryBtn: 'Request a Quote',
     heroSecondaryBtn: 'Explore Services',
-    aboutHeading: 'About RS Trans Logistics',
+    aboutHeading: 'About Blue River Logistics',
     aboutSubheading: 'A full-service trucking company based in Surrey, BC, serving freight needs across Canada and the USA.',
     aboutOverview: 'We are a full-service trucking company based in Surrey, British Columbia...',
     missionText: 'To provide reliable, flexible, and professional trucking services...',
-    contactHeading: 'Contact RS Trans Logistics',
+    contactHeading: 'Contact Blue River Logistics',
     contactSubheading: 'Ready to move freight between Canada and the USA? Contact us today.',
   });
   const [saving, setSaving] = useState(false);

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Truck, Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 
 const services = [
   { name: 'Dry Vans', slug: 'dry-vans' },
@@ -45,11 +45,13 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <Truck className="w-5 h-5 text-white" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Blue River Logistics"
+                className="h-10 w-auto object-contain"
+              />
               <div>
-                <span className="text-white font-black text-xl tracking-tight">RS Trans</span>
+                <span className="text-white font-black text-xl tracking-tight">Blue River</span>
                 <span className="block text-blue-400 text-xs font-medium tracking-widest uppercase -mt-1">Logistics</span>
               </div>
             </Link>
@@ -158,7 +160,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © 2026 RS Trans Logistics. All rights reserved.
+            © 2026 Blue River Logistics. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-slate-500">
             <Link href="/privacy-policy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>

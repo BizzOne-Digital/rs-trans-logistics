@@ -36,7 +36,7 @@ export default function AboutPage() {
             🇨🇦 Based in Surrey, BC
           </motion.div>
           <motion.h1 {...fadeUp(0.15)} className="heading-xl text-white mb-6">
-            About <span className="gradient-text">RS Trans Logistics</span>
+            About <span className="gradient-text">Blue River Logistics</span>
           </motion.h1>
           <motion.p {...fadeUp(0.3)} className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">
             A full-service trucking company based in Surrey, BC, serving freight needs across Canada and the USA.
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-transparent pointer-events-none" />
                 <div className="relative z-10">
                   <div className="text-6xl mb-4">🚛</div>
-                  <h3 className="text-white font-bold text-xl mb-4">RS Trans Logistics</h3>
+                  <h3 className="text-white font-bold text-xl mb-4">Blue River Logistics</h3>
                   <div className="space-y-3">
                     {[
                       { icon: <MapPin className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />, title: 'Headquarters', value: '12542 Grove Crescent, Surrey, BC V3V 2L7' },

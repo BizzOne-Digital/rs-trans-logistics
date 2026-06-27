@@ -69,7 +69,7 @@ export default function AdminSettingsPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { label: 'Company Name', field: 'companyName', placeholder: 'RS Trans Logistics' },
+                { label: 'Company Name', field: 'companyName', placeholder: 'Blue River Logistics' },
                 { label: 'Contact Person', field: 'contactPerson', placeholder: 'Rajneel Sampat' },
                 { label: 'Phone Number', field: 'phone', placeholder: '+1 236 514 6876' },
                 { label: 'Email Address', field: 'email', placeholder: 'rajneelsampat00@gmail.com' },

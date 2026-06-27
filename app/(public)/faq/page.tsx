@@ -12,7 +12,7 @@ const DEFAULT_FAQS = [
     _id: '1',
     category: 'General',
     question: 'What areas do you service?',
-    answer: 'RS Trans Logistics provides full-service trucking between Canada and the United States. We are based in Surrey, British Columbia, and operate freight routes across both countries.',
+    answer: 'Blue River Logistics provides full-service trucking between Canada and the United States. We are based in Surrey, British Columbia, and operate freight routes across both countries.',
   },
   {
     _id: '2',
@@ -48,7 +48,7 @@ const DEFAULT_FAQS = [
     _id: '7',
     category: 'Cross-Border',
     question: 'Do you handle cross-border customs?',
-    answer: 'RS Trans Logistics specializes in Canada-USA freight routes. While we are a transportation carrier, we can guide you on documentation requirements. We recommend working with a licensed customs broker for customs clearance.',
+    answer: 'Blue River Logistics specializes in Canada-USA freight routes. While we are a transportation carrier, we can guide you on documentation requirements. We recommend working with a licensed customs broker for customs clearance.',
   },
   {
     _id: '8',
@@ -77,7 +77,7 @@ const DEFAULT_FAQS = [
   {
     _id: '12',
     category: 'General',
-    question: 'How do I contact RS Trans Logistics?',
+    question: 'How do I contact Blue River Logistics?',
     answer: 'You can reach us by phone at +1 236 514 6876, by email at rajneelsampat00@gmail.com, or by filling out the contact form on our website. Our team is ready to assist with your freight needs.',
   },
 ];

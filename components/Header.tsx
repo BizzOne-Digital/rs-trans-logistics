@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Truck, ChevronDown, X, Menu, Phone } from 'lucide-react';
+import { ChevronDown, X, Menu, Phone } from 'lucide-react';
 
 const services = [
   { name: 'Dry Vans', slug: 'dry-vans' },
@@ -66,11 +66,13 @@ export default function Header() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center group-hover:bg-blue-500 transition-colors neon-blue">
-                <Truck className="w-5 h-5 text-white" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Blue River Logistics"
+                className="h-10 w-auto object-contain"
+              />
               <div>
-                <span className="text-white font-black text-xl tracking-tight leading-none">RS Trans</span>
+                <span className="text-white font-black text-xl tracking-tight leading-none">Blue River</span>
                 <span className="block text-blue-400 text-xs font-medium tracking-widest uppercase">Logistics</span>
               </div>
             </Link>
@@ -175,10 +177,12 @@ export default function Header() {
             {/* Mobile header bar */}
             <div className="flex items-center justify-between px-6 h-16 border-b border-white/5">
               <Link href="/" className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Truck className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-white font-black text-lg">RS Trans Logistics</span>
+                <img
+                  src="/logo.png"
+                  alt="Blue River Logistics"
+                  className="h-9 w-auto object-contain"
+                />
+                <span className="text-white font-black text-lg">Blue River Logistics</span>
               </Link>
               <button
                 onClick={() => setMobileOpen(false)}

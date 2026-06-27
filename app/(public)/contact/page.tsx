@@ -62,7 +62,7 @@ export default function ContactPage() {
           </motion.div>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
             className="heading-xl text-white mb-6">
-            Contact <span className="gradient-text">RS Trans Logistics</span>
+            Contact <span className="gradient-text">Blue River Logistics</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
             className="text-slate-400 text-lg max-w-2xl mx-auto">

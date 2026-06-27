@@ -28,13 +28,13 @@ export async function sendQuoteNotification(data: {
 
   // Admin notification
   await transporter.sendMail({
-    from: process.env.EMAIL_FROM || 'RS Trans Logistics <noreply@rstranslogistics.com>',
+    from: process.env.EMAIL_FROM || 'Blue River Logistics <noreply@blueriverlogistics.com>',
     to: adminEmail,
     subject: `New Quote Request from ${data.fullName}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0f172a; color: #ffffff; padding: 30px; border-radius: 10px;">
         <div style="border-bottom: 2px solid #2563eb; padding-bottom: 20px; margin-bottom: 20px;">
-          <h1 style="color: #2563eb; margin: 0;">RS Trans Logistics</h1>
+          <h1 style="color: #2563eb; margin: 0;">Blue River Logistics</h1>
           <h2 style="color: #f97316; margin: 5px 0 0;">New Quote Request</h2>
         </div>
         <table style="width: 100%; border-collapse: collapse;">
@@ -60,13 +60,13 @@ export async function sendQuoteNotification(data: {
 
   // Customer confirmation
   await transporter.sendMail({
-    from: process.env.EMAIL_FROM || 'RS Trans Logistics <noreply@rstranslogistics.com>',
+    from: process.env.EMAIL_FROM || 'Blue River Logistics <noreply@blueriverlogistics.com>',
     to: data.email,
-    subject: 'Quote Request Received - RS Trans Logistics',
+    subject: 'Quote Request Received - Blue River Logistics',
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0f172a; color: #ffffff; padding: 30px; border-radius: 10px;">
         <div style="border-bottom: 2px solid #2563eb; padding-bottom: 20px; margin-bottom: 20px;">
-          <h1 style="color: #2563eb; margin: 0;">RS Trans Logistics</h1>
+          <h1 style="color: #2563eb; margin: 0;">Blue River Logistics</h1>
         </div>
         <h2 style="color: #f97316;">Thank you, ${data.fullName}!</h2>
         <p style="color: #cbd5e1;">Your quote request has been received. Our team will review your shipment details and contact you shortly with a custom quote.</p>
@@ -78,7 +78,7 @@ export async function sendQuoteNotification(data: {
         <p style="color: #2563eb;">Phone: +1 236 514 6876</p>
         <p style="color: #2563eb;">Email: rajneelsampat00@gmail.com</p>
         <div style="margin-top: 20px; padding: 10px; border-top: 1px solid #1e293b;">
-          <p style="color: #64748b; font-size: 12px; margin: 0;">RS Trans Logistics | 12542 Grove Crescent, Surrey, BC V3V 2L7, Canada</p>
+          <p style="color: #64748b; font-size: 12px; margin: 0;">Blue River Logistics | 12542 Grove Crescent, Surrey, BC V3V 2L7, Canada</p>
         </div>
       </div>
     `,
@@ -95,13 +95,13 @@ export async function sendContactNotification(data: {
   const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL || 'rajneelsampat00@gmail.com';
 
   await transporter.sendMail({
-    from: process.env.EMAIL_FROM || 'RS Trans Logistics <noreply@rstranslogistics.com>',
+    from: process.env.EMAIL_FROM || 'Blue River Logistics <noreply@blueriverlogistics.com>',
     to: adminEmail,
     subject: `New Contact Message: ${data.subject}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0f172a; color: #ffffff; padding: 30px; border-radius: 10px;">
         <div style="border-bottom: 2px solid #2563eb; padding-bottom: 20px; margin-bottom: 20px;">
-          <h1 style="color: #2563eb; margin: 0;">RS Trans Logistics</h1>
+          <h1 style="color: #2563eb; margin: 0;">Blue River Logistics</h1>
           <h2 style="color: #f97316; margin: 5px 0 0;">New Contact Message</h2>
         </div>
         <table style="width: 100%; border-collapse: collapse;">
@@ -119,12 +119,12 @@ export async function sendContactNotification(data: {
   });
 
   await transporter.sendMail({
-    from: process.env.EMAIL_FROM || 'RS Trans Logistics <noreply@rstranslogistics.com>',
+    from: process.env.EMAIL_FROM || 'Blue River Logistics <noreply@blueriverlogistics.com>',
     to: data.email,
-    subject: 'Message Received - RS Trans Logistics',
+    subject: 'Message Received - Blue River Logistics',
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0f172a; color: #ffffff; padding: 30px; border-radius: 10px;">
-        <h1 style="color: #2563eb;">RS Trans Logistics</h1>
+        <h1 style="color: #2563eb;">Blue River Logistics</h1>
         <h2 style="color: #f97316;">Thank you for contacting us, ${data.name}!</h2>
         <p style="color: #cbd5e1;">We have received your message and will get back to you as soon as possible.</p>
         <p style="color: #cbd5e1;">Phone: +1 236 514 6876 | Email: rajneelsampat00@gmail.com</p>

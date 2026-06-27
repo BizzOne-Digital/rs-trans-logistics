@@ -58,7 +58,7 @@ export default function AdminLogin() {
           <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 neon-blue">
             <Truck className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-2xl font-black text-white">RS Trans Logistics</h1>
+          <h1 className="text-2xl font-black text-white">Blue River Logistics</h1>
           <p className="text-slate-400 text-sm mt-1">Admin Panel</p>
         </div>
 
@@ -76,7 +76,7 @@ export default function AdminLogin() {
                 <input
                   {...register('email', { required: 'Email is required' })}
                   type="email"
-                  placeholder="admin@rstranslogistics.com"
+                  placeholder="admin@blueriverlogistics.com"
                   className="form-input w-full pl-10 pr-4 py-3 rounded-xl text-sm"
                 />
               </div>
@@ -109,12 +109,7 @@ export default function AdminLogin() {
             </button>
           </form>
 
-          <div className="mt-6 p-4 bg-yellow-500/5 border border-yellow-500/20 rounded-xl">
-            <p className="text-yellow-400 text-xs font-medium mb-1">⚠️ Development Credentials</p>
-            <p className="text-slate-500 text-xs">Email: admin@rstranslogistics.com</p>
-            <p className="text-slate-500 text-xs">Password: Admin123!</p>
-            <p className="text-slate-600 text-xs mt-2">Change these before going to production!</p>
-          </div>
+
         </div>
 
         <p className="text-center text-slate-600 text-sm mt-6">

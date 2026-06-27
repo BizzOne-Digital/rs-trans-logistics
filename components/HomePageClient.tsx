@@ -315,7 +315,7 @@ export default function HomePageClient() {
       <section className="py-24 px-4 relative">
         <div className="max-w-7xl mx-auto">
           <Reveal className="text-center mb-16">
-            <span className="text-blue-400 text-sm font-bold uppercase tracking-widest">Why RS Trans Logistics</span>
+            <span className="text-blue-400 text-sm font-bold uppercase tracking-widest">Why Blue River Logistics</span>
             <h2 className="heading-lg text-white mt-3">
               Reliable Trucking. Strong Communication.<br />Professional Service.
             </h2>
