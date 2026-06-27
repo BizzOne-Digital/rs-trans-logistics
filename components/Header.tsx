@@ -69,7 +69,7 @@ export default function Header() {
               <img
                 src="/logo.png"
                 alt="Blue River Logistics"
-                className="h-10 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </Link>
 
@@ -176,7 +176,7 @@ export default function Header() {
                 <img
                   src="/logo.png"
                   alt="Blue River Logistics"
-                  className="h-9 w-auto object-contain"
+                  className="h-12 w-auto object-contain"
                 />
               </Link>
               <button

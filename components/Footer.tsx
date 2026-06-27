@@ -48,7 +48,7 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Blue River Logistics"
-                className="h-10 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
