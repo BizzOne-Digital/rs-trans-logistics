@@ -65,16 +65,12 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
+            <Link href="/" className="flex items-center group flex-shrink-0">
               <img
                 src="/logo.png"
                 alt="Blue River Logistics"
                 className="h-10 w-auto object-contain"
               />
-              <div>
-                <span className="text-white font-black text-xl tracking-tight leading-none">Blue River</span>
-                <span className="block text-blue-400 text-xs font-medium tracking-widest uppercase">Logistics</span>
-              </div>
             </Link>
 
             {/* Desktop Nav */}
@@ -182,7 +178,6 @@ export default function Header() {
                   alt="Blue River Logistics"
                   className="h-9 w-auto object-contain"
                 />
-                <span className="text-white font-black text-lg">Blue River Logistics</span>
               </Link>
               <button
                 onClick={() => setMobileOpen(false)}

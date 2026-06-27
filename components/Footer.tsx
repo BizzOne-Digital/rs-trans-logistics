@@ -44,16 +44,12 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-5">
+            <Link href="/" className="flex items-center mb-5">
               <img
                 src="/logo.png"
                 alt="Blue River Logistics"
                 className="h-10 w-auto object-contain"
               />
-              <div>
-                <span className="text-white font-black text-xl tracking-tight">Blue River</span>
-                <span className="block text-blue-400 text-xs font-medium tracking-widest uppercase -mt-1">Logistics</span>
-              </div>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               Full-service trucking solutions between Canada and the USA. Reliable, professional, and always on time.
